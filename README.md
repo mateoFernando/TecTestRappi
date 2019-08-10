@@ -1,2 +1,0 @@
-# TecTestRappi
-Prueba técnica iOS
