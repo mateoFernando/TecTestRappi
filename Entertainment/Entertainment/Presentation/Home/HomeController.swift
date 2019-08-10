@@ -25,7 +25,6 @@ class HomeController: UIViewController {
     
     var presenter:HomePresenterInterface?
     var configurator = HomeConfigurator()
-    var isPhoneLogin = true
     var alert: UIAlertController!
     
     override func viewDidLoad() {
@@ -42,13 +41,9 @@ class HomeController: UIViewController {
     }
     
     @IBAction func loginWithPhoneNumber(_ sender: Any) {
-        isPhoneLogin = true
-        presenter?.loginWithPhoneNumber()
     }
     
     @objc func loginButtonClicked() {
-        isPhoneLogin = false
-        presenter?.loginWithFacebook()
     }
 }
 

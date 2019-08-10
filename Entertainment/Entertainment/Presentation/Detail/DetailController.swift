@@ -38,7 +38,7 @@ class DetailController: UIViewController {
     
 }
 
-extension DetailController {
+extension DetailController : DetailControllerInterface {
     
     func setupInitialView() {
         navigationController?.navigationBar.isHidden = true

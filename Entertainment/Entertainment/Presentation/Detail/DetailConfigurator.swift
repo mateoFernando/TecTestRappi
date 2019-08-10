@@ -17,7 +17,7 @@ class DetailConfigurator : DetailConfiguratorInterface {
     
     func configure(viewController: DetailController ) {
         
-        let router = LoginRouter(viewController)
+        let router = DetailRouter(viewController)
         
         viewController.presenter = DetailPresenter(view:viewController,router:router, interactor: DetailInteractor())
     }
